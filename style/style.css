@@ -1,0 +1,576 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+}
+
+
+
+
+
+
+
+.hard{
+    background:#192c47 !important;
+    width: 960px;
+    height: 1080px;
+    font-size: 25px;
+    
+    font-weight:bold;
+}
+
+.hardleft{
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 900px;
+    height: 964px;
+}
+
+.hardright{
+    margin-top: 60px;
+    margin-right: 60px;
+    width: 900px;
+    height: 964px;
+}
+
+
+/* Premiere de couverture */
+
+#hard-central{
+    width: 840px;
+    height: 960px;
+    left: 60px;
+    right: 60px;
+    bottom: 60px;
+    top: 60px;
+    border: 5px solid #bf344d;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+.image-bandeau{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+.image-bandeau img{
+    width: 247.5px;
+    height: 247.5px;
+}
+
+#image-bandeau-bottom{
+    top: 870px;
+}
+
+#bandeau-logo{
+    display: flex;
+    border-top: 3px solid #bf344d;
+    width:  800px;
+    margin: 20px;
+    
+    flex-wrap: wrap;
+}
+
+#bandeau-logo img{
+    width: 125px;
+    height: 125px;
+    margin: 15px;
+}
+
+.hard-titre{
+    margin-top: 30%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+/* premiere page */
+
+.page-content{
+    background: #192c47;
+    width: 900px;
+    height: 964px;
+    margin: 60px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.right{
+    margin-left: 0px;
+    margin-right: 60px;
+}
+
+.page-titre{
+    width: 500px;
+    font-size: 15px;
+    text-align: left;
+    padding: 3%;
+    border-bottom: 2px solid #bf344d;
+    
+}
+
+#page1 img{
+    width: 250px;
+    height: 180px;
+    margin-top: 5%;
+    margin-left: 10px;
+
+}
+
+.paragraphe{
+    font-size: 13px;
+    text-align: left;
+    width: 500px;
+    
+    padding: 3%;
+}
+
+/*deuxiéme page*/
+
+
+#page2 .page-content{
+    display: grid;
+    grid-template-columns: 380px 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#page2 .page-titre{
+    width: 380px;
+    height: 200px;
+}
+#page2 .paragraphe{
+    width: 380px;
+}
+
+#page2 .colone-texte{
+    grid-column: 1;
+}
+
+#page2 .colone-image{
+    grid-column: 2;
+    margin-left: 40px;
+    text-align: right;
+    padding-top: 20px;
+    
+}
+
+#page2 img{
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+}
+
+/*troisiéme page */
+
+#page3 .page-content{
+    display: grid;
+    grid-template-columns: 550px 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#page3 .colone-texte{
+    grid-column: 1;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+#page3 .page-titre{
+    width: 500px;
+    padding: 2px;
+    
+}
+#page3 .paragraphe{
+    width: 500px;
+    padding: 5px;
+}
+
+#page3 .colone-image{
+    grid-column: 2;
+    margin-left: 20px;
+    text-align: right;
+    padding-top: 20px;
+    
+}
+
+#page3 .colone-image img{
+    width: 212px;
+    height: 230px;
+}
+
+.bulle{
+    background: #0084a8;
+    
+    margin-top: 50px;
+    width: 500px;
+}
+
+.bulle h1{
+    font-size: 15px;
+}
+
+/* quatriéme page */
+
+
+#page4 .page-content{
+    display: grid;
+    grid-template-columns: 580px 300px;
+    padding-left: 5px;
+    
+}
+
+#page4 .bulle{
+    background: #0084a8;
+    
+    margin-top: 50px;
+    width: 500px;
+    margin-left: 10px;
+}
+
+#page4 .colone-texte{
+    grid-column: 1;
+    
+}
+
+#page4 .colone-image{
+    grid-column: 2;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#page4 img{
+    width: 250px;
+    height: 300x;
+    margin-top: 50px;
+}
+
+#image-Page5{
+    position: absolute;
+    top: -1000px;
+    left: 650px;
+}
+
+#caroussel-logo{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+/*cinquiéme page */
+
+.citation{
+    width: 850px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid white;
+    height: 250px;
+}
+
+.citation p{
+    width: 730px;
+    
+    margin-top: 40px;
+}
+
+.citation span{
+    width: 850px;
+    text-align: right;
+    
+}
+
+.citation img{
+    width: 60px;
+    height: 60px;
+    margin-top: 65px;
+}
+
+.reverse{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+}
+
+#page5 .grid{
+    display: grid;
+    grid-template-columns: 300px 580px;
+    margin-bottom: 225px;
+    
+}
+
+#page5 .colone-image{
+    grid-column: 1;
+}
+
+#page5 .colone-texte{
+    grid-column: 2;
+}
+
+#page5 .colone-image img{
+    width: 280px;
+    height: 200px;
+    
+}
+
+#large-image{
+    width: 500px;
+    height: 225px;
+}
+#page5 .image-bandeau .small-image{
+    width: 225px;
+    height: 225px;
+}
+#page5 .image-bandeau{
+    top: 800px;
+    right: 2000px;
+}
+
+#image-Page6{
+    position: absolute;
+    top: -1000px;
+    width: 280px;
+}
+
+
+
+
+/* Sixiéme Page */
+
+#page6 .page-content{
+    display: grid;
+    grid-template-columns: 300px 600px;
+    padding-left: 5px;
+    
+}
+#page6 .colone-text{
+    grid-column: 1;
+}
+
+
+#page6 .paragraphe{
+    width: 250px;
+    
+}
+
+#page6 .page-titre{
+    width: 250px;
+    
+}
+
+#page6 .colone-image{
+    grid-column: 2;
+    padding-right: 15px;
+    text-align: right;
+    
+    
+}
+
+
+
+/*quatiéme de couverture*/
+
+
+#image-couverture{
+    height: 350px;
+    background: url(../src/image/beautiful-boulders-cascade-9274141.jpg);
+    color: white;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+}
+
+#citation-couverture{
+    display: flex;
+    
+}
+
+#citation-couverture p{
+    width: 900px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#citation-couverture img{
+    width: 45px;
+    height: 45px;
+}
+#image-couverture span{
+    text-align: right;
+    margin-left: 800px;
+    font-size: 15px;
+}
+
+#credit-couverture{
+    width: 800px;
+    margin-left: 95px;
+    border-top: 3px solid #8ebe3f;
+    border-bottom: 3px solid #8ebe3f;
+    color: white;
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+#credit{
+    display: flex;
+    
+}
+#credit p{
+    width: 150px;
+    margin-left: 140px;   
+}
+
+#credit img{
+    width: 125px;
+    height: 125px;
+    margin-left: 25px;
+}
+
+#credit-couverture #paragraphe{
+    font-size: 12px
+}
+
+#logo{
+    width: 800px;
+    margin-left: 95px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* IFRAME */
+
+iframe{
+    position: absolute;
+    width: 750px;
+    left: 100px;
+    top: 300px;
+}
+
+/*Animation*/
+
+
+#image-Page2-1{
+    opacity: 0;
+}
+
+#image-Page2-2{
+    opacity: 0;
+}
+
+#image-Page2-3{
+    opacity: 0;
+}
+
+#image-Page2-4{
+    opacity: 0;
+}
+
+#image-Page3-1{
+    opacity: 0;
+}
+
+#image-Page3-2{
+    opacity: 0;
+}
+
+#image-Page3-3{
+    opacity: 0;
+}
+
+#image-Page3-4{
+    opacity: 0;
+}
+
+.image-Page1{
+    animation: bounce 0.7s ease;
+}
+
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-30px);}
+}
+/*Fish*/
+
+
+.container{
+    position: absolute;  
+    width: 900px;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    top: 700px;
+    
+  }
+
+/*Fold*/
+.uc-initial-content{
+    background: #192c47;
+}
+.uc-container{
+	width: 150px;
+	height: 150px;
+    margin: 60px auto;
+    background: #192c47;
+}
+
+span.clickme {
+    display: block;
+    
+    color: black;
+    width: 100px;
+    height: 100px;
+    
+    cursor: pointer;
+}
+
+span.close{
+    display: block;
+    
+    color: black;
+    width: 400px;
+    height: 800px;
+    
+    cursor: pointer;
+}
+
+#image-fold{
+    width: 400px;
+    height: 800px;
+}
+
+.tap{
+    width: 100px;
+    height: 100px;
+    background: #192c47;
+    
+}
+
+/*Carousselle*/
+
+.slideshow {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin-left:50px;
+    border: 2px solid #bf344d;
+    padding-left: 100px;
+ }
+ 
+ .slideshow ul {
+    
+    width: 350px;
+    height: 350px;
+    padding:0; margin:0;
+    list-style: none;
+ }
+ .slideshow li {
+    float: left;
+ }
